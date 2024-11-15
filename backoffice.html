@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Back Office - Aggiungi Prodotto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container mt-5">
+    <h2>Crudazon</h2>
+    <form id="productForm">
+      <!--  prodotti -->
+      <div class="form-group mb-3">
+        <label for="productName">Nome prodotto</label>
+        <input type="text" class="form-control" id="productName" placeholder="Inserisci nome del prodotto" required>
+      </div>
+
+      <div class="form-group mb-3">
+        <label for="productDescription">Descrizione</label>
+        <textarea class="form-control" id="productDescription" placeholder="Inserisci descrizione del prodotto" rows="3" required></textarea>
+      </div>
+
+      <div class="form-group mb-3">
+        <label for="productPrice">Prezzo</label>
+        <input type="number" step="0.01" class="form-control" id="productPrice" placeholder="Inserisci prezzo" required>
+      </div>
+
+      <div class="form-group mb-3">
+        <label for="productImage">URL immagine</label>
+        <input type="url" class="form-control" id="productImage" placeholder="Inserisci l'URL immagine" required>
+      </div>
+
+      <div class="form-group mb-3">
+        <label for="productBrand">Brand</label>
+        <input type="text" class="form-control" id="productBrand" placeholder="Inserisci nome il brand " required>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Aggiungi </button>
+      <button type="button" id="resetButton" class="btn btn-secondary ms-2">Cancella</button>
+      <a href="homepage.html" class="btn btn-primary">Vai alla Homepage</a>
+
+    </form>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="backoffice.js"></script>
+</body>
+</html>
+
+</html>
